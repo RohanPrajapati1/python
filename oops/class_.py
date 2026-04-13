@@ -29,9 +29,10 @@ cat = Animal("Whiskers" , "Cat")
 print(dog.class_variable)
 print(Animal.class_variable)
 
-Animal.class_variable = "can be change by class name not by instance"
+dog.class_variable = "can be change by class name not by instance"
 
 print(dog.class_variable)
+print(cat.class_variable)
 print(Animal.class_variable)
 
 
