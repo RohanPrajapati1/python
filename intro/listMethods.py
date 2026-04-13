@@ -51,3 +51,7 @@ print(list) # []
 
 # list is mutable 
 # list is sequence type means it supports indexing and slicing.
+
+# list comprehension
+square = [x**2 for x in range(10)]
+print(square)  

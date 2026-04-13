@@ -74,3 +74,8 @@ print(str.isidentifier()) # False
 print(str.split()) # ['Hello,', 'World!']
 print(str.split(",")) # ['Hello', ' World!']
 # split means convert string to list 
+
+
+
+
+
