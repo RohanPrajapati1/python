@@ -22,3 +22,12 @@ def myfunction():
 
 print(myfunction())
 
+# Execution flow when calling myfunction()
+#   myfunction() -> actually calls the changecase wrapper.
+#   inside changecase.wrapper:
+#       it calls func() -> butdec func is the result of greeting(myfunction).
+#   so first, the greeting wrapper runs:
+#      calls the original myfunction() -> return "vridhi"
+#      adds "Hello" and "have a good day" -> "Hello vridhi have a good day"
+#   that string goes back to changecase.wrapper.
+#   .upper() is applied -> "HELLO VRIDHI HAVE A GOOD DAY".
